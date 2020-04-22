@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:paddingLeft="@dimen/_20dp"
+    android:paddingRight="@dimen/_20dp"
+    android:paddingTop="@dimen/_10dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/sparerequstedbysfLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/black_border_view"
+        android:padding="@dimen/_10dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Spare Part Requested By SF"
+            android:textSize="@dimen/_18dp"
+            ></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/estimateGivenLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15dp"
+        android:background="@drawable/black_border_view"
+        android:padding="@dimen/_10dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Estimate Given"
+            android:textSize="@dimen/_18dp"
+            ></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/sparePartShippedLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15dp"
+        android:background="@drawable/black_border_view"
+        android:padding="@dimen/_10dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Spare Part Shipped"
+            android:textSize="@dimen/_18dp"
+            ></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/defectiveSapreShippedbysfLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15dp"
+        android:background="@drawable/black_border_view"
+        android:padding="@dimen/_10dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Defective Spare Parts Shipped By SF"
+            android:textSize="@dimen/_18dp"
+            ></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/InvoiceIDLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15dp"
+        android:paddingTop="@dimen/_15dp"
+        android:background="@drawable/black_border_view"
+        android:padding="@dimen/_10dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Invoice ID Details"
+            android:textSize="@dimen/_18dp"
+            ></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/OUWInvoiceDetailLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/black_border_view"
+        android:layout_marginTop="@dimen/_15dp"
+        android:padding="@dimen/_10dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Out Of Warranty Invoice Detail ( Uploaded By Partner )"
+            android:textSize="@dimen/_18dp"
+            ></TextView>
+    </LinearLayout>
+</LinearLayout>

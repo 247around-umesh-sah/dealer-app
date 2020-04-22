@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DealerApp</string>
+    <string name="reallyExit">Do you really want to exit?</string>
+    <string name="enterAmount">Enter Amount</string>
+    <string name="exitConfirmInfo">Press back again to exit</string>
+    <string name="enableCallFeatureValiadtion">Enable phone call feature</string>
+    <string name="callConfirmationMessage">Are you sure you want to call ?</string>
+    <string name="enableLocation">Enable Location</string>
+</resources>

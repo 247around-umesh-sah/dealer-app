@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/_10dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/silver1"
+                android:elevation="@dimen/_5dp"
+                app:cardElevation="@dimen/_3dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/grayisWhite"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/_10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAccent"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_8dp"
+                        android:paddingLeft="@dimen/_10dp"
+                        android:paddingRight="@dimen/_20dp"
+                        android:paddingBottom="@dimen/_8dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/spareRequestedBy"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@color/transparentWhite"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/_10dp"
+                            android:text="Spare Parts Rquested By Bervice Center"
+                            android:textColor="#FFFFFF"
+                            android:textSize="@dimen/_15dp"
+                            android:visibility="gone" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_16dp"
+                        android:layout_marginTop="@dimen/_10dp"
+                        android:layout_marginRight="@dimen/_16dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="@dimen/_25dp"
+                            android:layout_height="@dimen/_25dp"
+                            android:background="@drawable/category_appliance"></ImageView>
+
+                        <TextView
+                            android:id="@+id/categoryAppliance"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:fontFamily="@font/sourcesanspro_regular"
+                            android:paddingLeft="@dimen/_10dp"
+                            android:paddingRight="@dimen/_10dp"
+                            android:text="Category Appliance"
+                            android:textSize="@dimen/_16dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_16dp"
+                        android:layout_marginRight="@dimen/_16dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/_25dp"
+                            android:layout_height="@dimen/_25dp"
+                            android:background="@drawable/appliance_model_number"></ImageView>
+
+                        <TextView
+                            android:id="@+id/applianceModelNumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/sourcesanspro_regular"
+                            android:paddingLeft="@dimen/_10dp"
+                            android:paddingRight="@dimen/_10dp"
+                            android:text="1234567890123"
+                            android:textSize="@dimen/_16dp"
+
+                            />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10dp"
+                            android:paddingLeft="@dimen/_10dp"
+                            android:text="Appliance Model Number"
+                            android:textColor="@color/cyan"
+                            android:textSize="@dimen/_14dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_16dp"
+                        android:layout_marginTop="@dimen/_10dp"
+                        android:layout_marginRight="@dimen/_16dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:layout_width="@dimen/_25dp"
+                            android:layout_height="@dimen/_25dp"
+                            android:background="@drawable/amounticon"></ImageView>
+
+                        <TextView
+                            android:id="@+id/amount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/sourcesanspro_regular"
+                            android:paddingLeft="@dimen/_10dp"
+                            android:text="0.00  RS"
+                            android:textSize="@dimen/_16dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_16dp"
+                        android:layout_marginTop="@dimen/_10dp"
+                        android:layout_marginRight="@dimen/_16dp"
+
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/_25dp"
+                            android:layout_height="@dimen/_25dp"
+                            android:background="@drawable/appliance_model_number"></ImageView>
+
+                        <TextView
+                            android:id="@+id/serilanumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/sourcesanspro_regular"
+                            android:paddingLeft="@dimen/_10dp"
+                            android:paddingRight="@dimen/_10dp"
+                            android:text="1234567890123"
+                            android:textSize="@dimen/_16dp"
+
+                            />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10dp"
+                            android:paddingLeft="@dimen/_10dp"
+                            android:text="Appliance Serial Number"
+                            android:textColor="@color/cyan"
+                            android:textSize="@dimen/_14dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_16dp"
+                        android:layout_marginTop="@dimen/_10dp"
+                        android:layout_marginRight="@dimen/_16dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:layout_width="@dimen/_25dp"
+                            android:layout_height="@dimen/_25dp"
+                            android:background="@drawable/compressor"></ImageView>
+
+                        <TextView
+                            android:id="@+id/sparePartName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/sourcesanspro_regular"
+                            android:paddingLeft="@dimen/_10dp"
+                            android:text="COMPRESSOR WITH ACCESORIES"
+                            android:textSize="@dimen/_16dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_16dp"
+                        android:layout_marginTop="@dimen/_10dp"
+                        android:layout_marginRight="@dimen/_16dp"
+
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:layout_width="@dimen/_25dp"
+                            android:layout_height="@dimen/_25dp"
+                            android:background="@drawable/category_appliance"></ImageView>
+
+                        <TextView
+                            android:id="@+id/requestpartType"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/sourcesanspro_regular"
+                            android:paddingLeft="@dimen/_10dp"
+                            android:text="Request Spare Parts"
+                            android:textSize="@dimen/_16dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_16dp"
+                            android:layout_marginRight="@dimen/_16dp"
+                            android:layout_weight=".5"
+                            android:gravity="center_vertical">
+
+
+                            <ImageView
+                                android:layout_width="@dimen/_25dp"
+                                android:layout_height="@dimen/_25dp"
+                                android:background="@drawable/requestquantity"></ImageView>
+
+                            <TextView
+                                android:id="@+id/requestedquantity"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/sourcesanspro_regular"
+                                android:paddingLeft="@dimen/_10dp"
+                                android:text="Requested Quantity"
+                                android:textSize="@dimen/_16dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10dp"
+                            android:layout_weight=".5"
+                            android:gravity="center_vertical">
+
+
+                            <ImageView
+                                android:layout_width="@dimen/_25dp"
+                                android:layout_height="@dimen/_25dp"
+                                android:background="@drawable/requestquantity"></ImageView>
+
+                            <TextView
+                                android:id="@+id/shipedquantity"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/sourcesanspro_regular"
+                                android:paddingLeft="@dimen/_10dp"
+                                android:text="Shipped Quantity"
+                                android:textSize="@dimen/_16dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_16dp"
+                        android:layout_marginTop="@dimen/_10dp"
+                        android:layout_marginRight="@dimen/_16dp"
+
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/_25dp"
+                            android:layout_height="@dimen/_25dp"
+                            android:background="@drawable/dateicon"></ImageView>
+
+                        <TextView
+                            android:id="@+id/requesteddate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/sourcesanspro_regular"
+                            android:paddingLeft="@dimen/_10dp"
+                            android:text="Request date"
+                            android:textSize="@dimen/_16dp" />
+
+                        <TextView
+                            android:id="@+id/requeste_ddate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/sourcesanspro_regular"
+                            android:paddingLeft="@dimen/_10dp"
+                            android:text="Request Date"
+                            android:textColor="@color/cyan"
+                            android:textSize="@dimen/_12dp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_16dp"
+                        android:layout_marginTop="@dimen/_10dp"
+                        android:layout_marginRight="@dimen/_16dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="@dimen/_25dp"
+                            android:layout_height="@dimen/_25dp"
+                            android:background="@drawable/times_slot"></ImageView>
+
+                        <TextView
+                            android:id="@+id/requestedTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/sourcesanspro_regular"
+                            android:paddingLeft="@dimen/_10dp"
+                            android:text="Request Time"
+                            android:textSize="@dimen/_16dp" />
+
+                        <TextView
+                            android:id="@+id/requested_Time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/sourcesanspro_regular"
+                            android:paddingLeft="@dimen/_10dp"
+                            android:text="Request Time"
+                            android:textColor="@color/cyan"
+                            android:textSize="@dimen/_12dp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/acknowledgeDateLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_16dp"
+                        android:layout_marginTop="@dimen/_10dp"
+                        android:layout_marginRight="@dimen/_16dp"
+
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/_25dp"
+                            android:layout_height="@dimen/_25dp"
+                            android:background="@drawable/dateicon"></ImageView>
+
+                        <TextView
+                            android:id="@+id/acknowledgeDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/sourcesanspro_regular"
+                            android:paddingLeft="@dimen/_10dp"
+                            android:text="acknowledge Date"
+                            android:textSize="@dimen/_16dp" />
+
+                        <TextView
+                            android:id="@+id/acknowledge_Date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/sourcesanspro_regular"
+                            android:paddingLeft="@dimen/_10dp"
+                            android:text="Acknowledge Date"
+                            android:textColor="@color/cyan"
+                            android:textSize="@dimen/_12dp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_16dp"
+                        android:layout_marginTop="@dimen/_10dp"
+                        android:layout_marginRight="@dimen/_16dp"
+                        android:gravity="center_vertical"
+
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="@dimen/_25dp"
+                            android:layout_height="@dimen/_25dp"
+                            android:background="@drawable/times_slot"></ImageView>
+
+                        <TextView
+                            android:id="@+id/acknowledgeTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/sourcesanspro_regular"
+                            android:paddingLeft="@dimen/_10dp"
+                            android:text="acknowledge Time"
+                            android:textSize="@dimen/_16dp" />
+
+                        <TextView
+                            android:id="@+id/acknowledge_Time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/sourcesanspro_regular"
+                            android:paddingLeft="@dimen/_10dp"
+                            android:text="Acknowledge Time"
+                            android:textColor="@color/cyan"
+                            android:textSize="@dimen/_12dp" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_16dp"
+                        android:layout_marginTop="@dimen/_10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:layout_width="@dimen/_25dp"
+                            android:layout_height="@dimen/_25dp"
+                            android:background="@drawable/remarks"></ImageView>
+
+                        <TextView
+                            android:id="@+id/remarksByServiceCenter"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/sourcesanspro_regular"
+                            android:paddingLeft="@dimen/_10dp"
+                            android:text="Remarks By Service center"
+                            android:textSize="@dimen/_16dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_16dp"
+                        android:layout_marginTop="@dimen/_10dp"
+                        android:gravity="center_vertical"
+                        android:visibility="gone"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:layout_width="@dimen/_25dp"
+                            android:layout_height="@dimen/_25dp"
+                            android:background="@drawable/symptom"></ImageView>
+
+                        <TextView
+                            android:id="@+id/symptom"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/sourcesanspro_regular"
+                            android:paddingLeft="@dimen/_10dp"
+                            android:text="Symptom"
+                            android:textSize="@dimen/_16dp" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_16dp"
+                android:layout_marginTop="@dimen/_10dp"
+                android:layout_marginBottom="@dimen/_10dp"
+
+                android:gravity="center"
+
+                android:orientation="horizontal"
+                android:padding="@dimen/_10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5dp"
+                    android:text="Track Spare Part"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/_19dp"
+                    android:textStyle="bold"></TextView>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:layout_marginLeft="@dimen/_10dp"
+                    android:layout_weight="1">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_3dp"
+                        android:layout_centerInParent="true"
+                        android:background="@color/gray"></View>
+
+                    <ImageView
+                        android:layout_width="@dimen/_35dp"
+                        android:layout_height="@dimen/_35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/_30dp"
+                        android:background="@drawable/expendrighticon">
+
+                    </ImageView>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

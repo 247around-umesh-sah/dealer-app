@@ -1,0 +1,168 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    tools:context=".LoginActivity"
+    android:background="@color/colorPrimary"
+    tools:ignore="ContentDescription">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+           android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/loginAppLogo"
+                android:layout_width="@dimen/_250dp"
+                android:layout_height="@dimen/_230dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/splash_app_logo"
+             />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DEALER APP"
+                android:textSize="@dimen/_25dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                ></TextView>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/loginLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="?attr/dialogPreferredPadding"
+                android:gravity="center_horizontal"
+                tools:ignore="UselessParent">
+                <LinearLayout
+                    android:layout_width="@dimen/_270dp"
+                    android:layout_height="@dimen/_50dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/login_rounded_drawable"
+                    android:gravity="center"
+                    >
+                    <com.example.dealerapp.component.BMAFontViewField
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:textSize="@dimen/_23dp"
+                        android:textColor="#3EC7B8"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+
+                        android:layout_marginLeft="@dimen/_15dp"
+
+                        >
+
+                        <EditText
+                            android:id="@+id/phonenumber"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:hint="User Id"
+                            android:background="@color/transparentWhite"
+                            android:inputType="phone"
+                            android:layout_marginLeft="@dimen/_15dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="@dimen/_270dp"
+                    android:layout_height="@dimen/_50dp"
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:background="@drawable/login_rounded_drawable"
+                    android:orientation="horizontal">
+                    <com.example.dealerapp.component.BMAFontViewField
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/icon_password"
+                        android:gravity="center"
+                        android:textSize="@dimen/_23dp"
+                        android:visibility="gone"
+                        android:textColor="#3EC7B8"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="@dimen/_15dp"
+
+                        >
+<!--                        <com.google.android.material.textfield.TextInputLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:hint="Password"-->
+<!--                            android:paddingBottom="@dimen/_15dp"-->
+<!--                            app:passwordToggleEnabled="true">-->
+
+
+
+                            <EditText
+                                android:id="@+id/password"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:inputType="textPassword"
+                                android:layout_marginLeft="@dimen/_15dp"
+                                android:background="@color/transparentWhite"
+                                android:hint="password"
+                                android:layout_weight="1"/>
+<!--                        </com.google.android.material.textfield.TextInputLayout>-->
+                        <!--<com.around.engineerbuddy.component.BMAFontViewField-->
+                        <!--android:id="@+id/showHidePassword"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:text="@string/icon_key"-->
+                        <!--android:gravity="center"-->
+                        <!--android:textSize="@dimen/_18dp"/>-->
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/login_button"
+                    android:layout_width="@dimen/_258dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20dp"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:text="Login"
+                    android:textSize="@dimen/_18dp"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_40dp"
+            android:layout_marginRight="@dimen/_40dp"
+            android:layout_marginBottom="@dimen/_30dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="Forgot the password.Contact the SF of your area."/>
+
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

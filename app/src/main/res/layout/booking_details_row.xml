@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/silver1"
+            app:cardElevation="@dimen/_3dp"
+            android:elevation="@dimen/_5dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@color/grayisWhite"
+            android:orientation="vertical"
+            >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/_10dp"
+            android:paddingRight="@dimen/_20dp"
+            android:minHeight="@dimen/_60dp">
+                <TextView
+                    android:id="@+id/bookingID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_10dp"
+                    android:gravity="center_vertical"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/_15dp"
+                    android:text="SM-1341421709141"
+                    android:layout_weight="1"
+                    android:background="@color/transparentWhite" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/statusTextview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                   android:layout_marginLeft="@dimen/_15dp"
+                    android:gravity="center"
+                    android:text="Status  -"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/_15dp"
+                    android:background="@color/transparentWhite"
+                    />
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/_10dp"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/_15dp"
+                android:background="@color/transparentWhite"
+                />
+            </LinearLayout>
+
+
+    </LinearLayout>
+            <TextView
+                android:id="@+id/customerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Customer Full Name"
+                android:layout_marginLeft="@dimen/_16dp"
+                android:layout_marginRight="@dimen/_16dp"
+                android:textSize="@dimen/_20dp"
+              />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_16dp"
+                android:layout_marginRight="@dimen/_16dp"
+                android:layout_marginTop="@dimen/_10dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="@dimen/_25dp"
+                    android:layout_height="@dimen/_25dp"
+                    android:background="@drawable/addressicon"
+                    ></ImageView>
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="address"
+                android:fontFamily="@font/sourcesanspro_regular"
+                android:paddingLeft="@dimen/_10dp"
+                android:paddingRight="@dimen/_10dp"
+                android:textSize="@dimen/_16dp"
+                />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_16dp"
+                android:layout_marginRight="@dimen/_16dp"
+                android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pin Code :- "
+                android:textSize="@dimen/_16dp"
+                />
+                <TextView
+                    android:id="@+id/pincode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:fontFamily="@font/sourcesanspro_regular"
+                    android:padding="@dimen/_10dp"
+                    android:textSize="@dimen/_16dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_16dp"
+                android:layout_marginRight="@dimen/_16dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="@dimen/_25dp"
+                    android:layout_height="@dimen/_25dp"
+                    android:background="@drawable/amounticon"
+                    ></ImageView>
+
+            <TextView
+                android:id="@+id/amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="300 RS"
+                android:paddingLeft="@dimen/_10dp"
+                android:textSize="@dimen/_16dp"
+                />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Not Paid"
+                    android:padding="@dimen/_10dp"
+                    android:paddingLeft="@dimen/_10dp"
+                    android:textSize="@dimen/_14dp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/silver1"
+            app:cardElevation="@dimen/_3dp"
+            android:elevation="@dimen/_10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/_60dp"
+                android:layout_marginBottom="@dimen/_10dp"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:orientation="horizontal"
+                android:background="#FFFFFF"
+                android:gravity="center"
+
+                android:layout_marginTop="@dimen/_10dp"
+                android:padding="@dimen/_10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Booking Details"
+                    android:textSize="@dimen/_19dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorAccent"
+                    ></TextView>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_10dp"
+                    android:layout_gravity="end"
+                    android:layout_weight="1"
+                    >
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_3dp"
+                        android:layout_centerInParent="true"
+                        android:background="@color/gray"
+                        ></View>
+                    <ImageView
+                        android:layout_width="@dimen/_40dp"
+                        android:layout_height="@dimen/_40dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/_30dp"
+                        android:background="@drawable/downexpandicon">
+
+                    </ImageView>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/grayisWhite"
+
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/_16dp"
+                    android:layout_marginRight="@dimen/_16dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:layout_width="@dimen/_25dp"
+                        android:layout_height="@dimen/_25dp"
+                        android:background="@drawable/dateicon"
+                        ></ImageView>
+
+                <TextView
+                    android:id="@+id/bookingdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="07-04-2020"
+                    android:fontFamily="@font/sourcesanspro_regular"
+                    android:paddingLeft="@dimen/_10dp"
+                    android:paddingRight="@dimen/_10dp"
+                    android:textSize="@dimen/_16dp"
+                    />
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="booking Date"
+                        android:paddingLeft="@dimen/_10dp"
+                        android:textSize="@dimen/_14dp"
+                        android:layout_marginLeft="@dimen/_10dp"
+                        android:textColor="@color/cyan"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/closedbookindateLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:layout_marginLeft="@dimen/_16dp"
+                    android:layout_marginRight="@dimen/_16dp"
+                    android:gravity="center_vertical"
+                    >
+
+
+                    <ImageView
+                        android:layout_width="@dimen/_25dp"
+                        android:layout_height="@dimen/_25dp"
+                        android:background="@drawable/addressicon"
+                        ></ImageView>
+                    <TextView
+                        android:id="@+id/closeddate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="07-04-2020"
+                        android:fontFamily="@font/sourcesanspro_regular"
+                        android:paddingLeft="@dimen/_10dp"
+                        android:textSize="@dimen/_16dp"
+                        />
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="closed Date"
+                        android:paddingLeft="@dimen/_10dp"
+                        android:textSize="@dimen/_14dp"
+                        android:layout_marginLeft="@dimen/_20dp"
+                        android:textColor="@color/red1"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/symptomLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/_16dp"
+                    android:layout_marginRight="@dimen/_16dp"
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/_25dp"
+                        android:layout_height="@dimen/_25dp"
+                        android:background="@drawable/symptom"
+                        ></ImageView>
+                    <TextView
+                        android:id="@+id/symptom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Symptom (at the time of booking creation )"
+                        android:fontFamily="@font/sourcesanspro_regular"
+                        android:textSize="@dimen/_16dp"
+                        android:paddingLeft="@dimen/_10dp"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/remarksLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/_16dp"
+                    android:layout_marginRight="@dimen/_16dp"
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/_25dp"
+                        android:layout_height="@dimen/_25dp"
+                        android:background="@drawable/remarks"
+                        ></ImageView>
+                    <TextView
+                        android:id="@+id/remarks"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Remarks on the screen"
+                        android:fontFamily="@font/sourcesanspro_regular"
+                        android:paddingLeft="@dimen/_10dp"
+                        android:textSize="@dimen/_16dp"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

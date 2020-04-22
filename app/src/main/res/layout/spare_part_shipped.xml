@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="@dimen/_8dp"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Spare ID "
+                android:textStyle="bold"
+                android:layout_weight=".5"
+                android:textSize="@dimen/_16dp">
+
+            </TextView>
+            <TextView
+                android:id="@+id/spareID"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:textSize="@dimen/_16dp"
+                android:text="32541"
+
+                android:layout_weight=".5">
+
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Part Shipped By Partner/Warehouse"
+                android:textStyle="bold"
+                android:layout_weight=".5"
+                android:textSize="@dimen/_16dp">
+
+            </TextView>
+            <TextView
+                android:id="@+id/partner_warehouse"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:textSize="@dimen/_16dp"
+                android:text="Warehouse"
+                android:layout_weight=".5">
+
+            </TextView>
+        </LinearLayout>
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=" Shipped Parts"
+                android:textStyle="bold"
+                android:layout_weight=".5"
+                android:textSize="@dimen/_16dp">
+
+            </TextView>
+            <TextView
+                android:id="@+id/shippedParts"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:textSize="@dimen/_16dp"
+                android:text="COMPRESSOR,WITH ACCESSORIES LG-MA42LPJG"
+                android:layout_weight=".5">
+
+            </TextView>
+
+         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:text=" Shipped Parts Number"
+                android:textSize="@dimen/_16dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/shippedPartsNumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:textSize="@dimen/_16dp"
+                android:text="1100096629"
+                android:layout_weight=".5">
+
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Part Type"
+                android:textStyle="bold"
+                android:layout_weight=".5"
+                android:textSize="@dimen/_16dp">
+
+            </TextView>
+            <TextView
+                android:id="@+id/partType"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:textSize="@dimen/_16dp"
+                android:text="COMPRESSOR"
+                android:layout_weight=".5">
+
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Shipped Quantity"
+                android:textStyle="bold"
+                android:layout_weight=".5"
+                android:textSize="@dimen/_16dp">
+
+            </TextView>
+            <TextView
+                android:id="@+id/shippedQuantity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:textSize="@dimen/_16dp"
+                android:text="1"
+                android:layout_weight=".5">
+
+            </TextView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Pickup Request"
+                android:textStyle="bold"
+                android:layout_weight=".5"
+                android:textSize="@dimen/_16dp">
+
+            </TextView>
+            <TextView
+                android:id="@+id/PickupRequest"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:textSize="@dimen/_16dp"
+                android:text="Pickup Requested"
+                android:layout_weight=".5">
+
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Pickup Schedule"
+                android:textStyle="bold"
+                android:layout_weight=".5"
+                android:textSize="@dimen/_16dp">
+
+            </TextView>
+            <TextView
+                android:id="@+id/PickupSchedule"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:textSize="@dimen/_16dp"
+                android:text="Not Available"
+                android:layout_weight=".5">
+
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Courier Name"
+                android:textStyle="bold"
+                android:layout_weight=".5"
+                android:textSize="@dimen/_16dp">
+
+            </TextView>
+            <TextView
+                android:id="@+id/courierName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:textSize="@dimen/_16dp"
+                android:text="gati kwe"
+                android:layout_weight=".5">
+
+            </TextView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="AWB"
+                android:textStyle="bold"
+                android:layout_weight=".5"
+                android:textSize="@dimen/_16dp">
+
+            </TextView>
+            <TextView
+                android:id="@+id/AWB"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:textSize="@dimen/_16dp"
+                android:text="325683183"
+                android:layout_weight=".5">
+
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="No. Of Boxes"
+                android:textStyle="bold"
+                android:layout_weight=".5"
+                android:textSize="@dimen/_16dp">
+
+            </TextView>
+            <TextView
+                android:id="@+id/NoOfBoxes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:textSize="@dimen/_16dp"
+                android:text="Not Available"
+                android:layout_weight=".5">
+
+            </TextView>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Weight"
+                android:textStyle="bold"
+                android:layout_weight=".5"
+                android:textSize="@dimen/_16dp">
+
+            </TextView>
+            <TextView
+                android:id="@+id/Weight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:textSize="@dimen/_16dp"
+                android:text="24 KG 000 Gram"
+                android:layout_weight=".5">
+
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=" Shipped date"
+                android:textStyle="bold"
+                android:layout_weight=".5"
+                android:textSize="@dimen/_16dp">
+
+            </TextView>
+            <TextView
+                android:id="@+id/shippeddate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:textSize="@dimen/_16dp"
+                android:text="11-06-2019"
+                android:layout_weight=".5">
+
+            </TextView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="EDD"
+                android:textStyle="bold"
+                android:layout_weight=".5"
+                android:textSize="@dimen/_16dp">
+
+            </TextView>
+            <TextView
+                android:id="@+id/EDD"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:textSize="@dimen/_16dp"
+                android:text="Not Available"
+                android:layout_weight=".5">
+
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Remarks By Partner"
+                android:textStyle="bold"
+                android:layout_weight=".5"
+                android:textSize="@dimen/_16dp">
+
+            </TextView>
+            <TextView
+                android:id="@+id/RemarksByPartner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:textSize="@dimen/_16dp"
+                android:text="Part shipped to SF"
+                android:layout_weight=".5">
+
+            </TextView>
+        </LinearLayout>
+        		        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Challan Number"
+                android:textStyle="bold"
+                android:layout_weight=".5"
+                android:textSize="@dimen/_16dp">
+
+            </TextView>
+            <TextView
+                android:id="@+id/ChallanNumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:textSize="@dimen/_16dp"
+                android:text="GOWTVS DC 0001"
+                android:layout_weight=".5">
+
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Challan approx Value"
+                android:textStyle="bold"
+                android:layout_weight=".5"
+                android:textSize="@dimen/_16dp">
+
+            </TextView>
+            <TextView
+                android:id="@+id/ChallanapproxValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:textSize="@dimen/_16dp"
+                android:text="1971.25"
+                android:layout_weight=".5">
+
+            </TextView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Is Defective/Ok Parts Required"
+                android:textStyle="bold"
+                android:layout_weight=".5"
+                android:textSize="@dimen/_16dp">
+
+            </TextView>
+            <TextView
+                android:id="@+id/IsDefectiveOkPartsRequired"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:textSize="@dimen/_16dp"
+                android:text="Yes"
+                android:layout_weight=".5">
+
+            </TextView>
+        </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="2dp"
+    android:id="@+id/radioButtonLayout"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    >
+
+    <androidx.appcompat.widget.AppCompatRadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/RadioButtonStyle"
+        android:buttonTint="@color/colorPrimary"
+        android:layout_marginTop="@dimen/_16dp" />
+
+    <TextView
+        android:id="@+id/staus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_13dp"
+        android:paddingLeft="@dimen/_10dp"
+
+        android:layout_toRightOf="@+id/radioButton"
+        android:textSize="@dimen/_15dp"
+        tools:ignore="RtlHardcoded" />
+
+</RelativeLayout>
