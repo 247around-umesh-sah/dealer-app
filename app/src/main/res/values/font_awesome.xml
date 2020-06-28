@@ -46,6 +46,7 @@
     <string name="icon_square" translatable="false">&#xf096;</string>
     <string name="icon_calendar" translatable="false">&#xf073;</string>
     <string name="icon_arrow_down" translatable="false">&#xf078;</string>
+
     <string name="icon_arrow_up" translatable="false">&#xf077;</string>
     <string name="icon_users" translatable="false">&#xf0c0;</string>
     <string name="icon_ban" translatable="false">&#xf05e;</string>
@@ -175,6 +176,8 @@
     <string name="straight_icon" translatable="false">&#xf062;</string>
     <string name="map_marker_icon" translatable="false">&#xf3c5;</string>
     <string name="star_icon" translatable="false">&#xf005;</string>
+    <string name="truck_icon" translatable="false">&#xf4dc;</string>
+
 
 
 

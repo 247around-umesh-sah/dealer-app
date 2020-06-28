@@ -5,8 +5,25 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/applianceRecyclerView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
 
     </androidx.recyclerview.widget.RecyclerView>
+    <Button
+        android:id="@+id/escalationButton"
+        android:layout_width="@dimen/_180dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
+
+        android:layout_marginTop="8dp"
+        android:background="@drawable/cancel_button"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:text="Escalation"
+        android:textColor="@android:color/white"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:visibility="visible" />
 
 </LinearLayout>

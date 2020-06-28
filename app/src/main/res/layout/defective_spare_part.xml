@@ -29,7 +29,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/_10dp"
                 android:textSize="@dimen/_16dp"
-                android:text="32541"
+                android:text="Not Available"
 
                 android:layout_weight=".5">
 
@@ -43,7 +43,7 @@
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="SF Dispatch Defective Part To Warehouse/Partner"
+                android:text="SF Dispatch Part To"
                 android:textStyle="bold"
                 android:layout_weight=".5"
                 android:textSize="@dimen/_16dp">
@@ -55,7 +55,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/_10dp"
                 android:textSize="@dimen/_16dp"
-                android:text="247 Around Warehouse Ghaziabad"
+                android:text="Not Available"
                 android:layout_weight=".5">
 
             </TextView>
@@ -81,7 +81,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/_10dp"
                 android:textSize="@dimen/_16dp"
-                android:text="COMPRESSOR,WITH ACCESSORIES LG-MA42LPJG"
+                android:text="Not Available"
                 android:layout_weight=".5">
 
             </TextView>
@@ -98,7 +98,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight=".5"
-                android:text=" Shipped Parts Number"
+                android:text="Parts Number"
                 android:textSize="@dimen/_16dp"
                 android:textStyle="bold"/>
 
@@ -108,7 +108,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/_10dp"
                 android:textSize="@dimen/_16dp"
-                android:text="1100096629"
+                android:text="Not Available"
                 android:layout_weight=".5">
 
             </TextView>
@@ -135,7 +135,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/_10dp"
                 android:textSize="@dimen/_16dp"
-                android:text="1"
+                android:text="Not Available"
                 android:layout_weight=".5">
 
             </TextView>
@@ -164,7 +164,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/_10dp"
                 android:textSize="@dimen/_16dp"
-                android:text="gati kwe"
+                android:text="Not Available"
                 android:layout_weight=".5">
 
             </TextView>
@@ -192,7 +192,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/_10dp"
                 android:textSize="@dimen/_16dp"
-                android:text="325683183"
+                android:text="Not Available"
                 android:layout_weight=".5">
 
             </TextView>
@@ -247,7 +247,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/_10dp"
                 android:textSize="@dimen/_16dp"
-                android:text="24 KG 000 Gram"
+                android:text="Not Available"
                 android:layout_weight=".5">
 
             </TextView>
@@ -273,7 +273,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/_10dp"
                 android:textSize="@dimen/_16dp"
-                android:text="00"
+                android:text="Not Available"
                 android:layout_weight=".5">
 
             </TextView>
@@ -287,7 +287,7 @@
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text=" Shipped date"
+                android:text="Shipped Date"
                 android:textStyle="bold"
                 android:layout_weight=".5"
                 android:textSize="@dimen/_16dp">
@@ -299,7 +299,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/_10dp"
                 android:textSize="@dimen/_16dp"
-                android:text="11-06-2019"
+                android:text="Not Available"
                 android:layout_weight=".5">
 
             </TextView>
@@ -328,7 +328,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/_10dp"
                 android:textSize="@dimen/_16dp"
-                android:text="207697819"
+                android:text="Not Available"
                 android:layout_weight=".5">
 
             </TextView>
@@ -354,7 +354,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/_10dp"
                 android:textSize="@dimen/_16dp"
-                android:text="Part shipped to SF"
+                android:text="Not Available"
                 android:layout_weight=".5">
 
             </TextView>
@@ -368,7 +368,7 @@
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text=" SF Challan Number"
+                android:text="SF Challan Number"
                 android:textStyle="bold"
                 android:layout_weight=".5"
                 android:textSize="@dimen/_16dp">
@@ -380,7 +380,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/_10dp"
                 android:textSize="@dimen/_16dp"
-                android:text="GOWTVS DC 0001"
+                android:text="Not Available"
                 android:layout_weight=".5">
 
             </TextView>

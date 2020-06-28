@@ -1,12 +1,11 @@
 package helper;
 
 import android.content.Context;
-import android.content.SharedPreferences;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.util.Log;
 
-import com.example.dealerapp.SplashActivity;
+import com.example.RetailApp.SplashActivity;
 import com.google.gson.Gson;
 
 import org.json.JSONObject;
@@ -16,8 +15,6 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.UUID;
-
-import util.BMAConstants;
 
 /**
  * Created by abhay on 28/12/17.
@@ -72,6 +69,22 @@ public class GetToken {
             case "searchData":
                 searchData(urlParameters,params);
                 break;
+            case "getSpareTabData":
+                getSpareTabData(urlParameters,params);
+                break;
+            case "submitEscalation":
+                submitEscalation(urlParameters,params);
+                break;
+            case "getEscalationReason":
+                getEscalationReason(urlParameters,params);
+                break;
+            case "getTrackingData":
+                getTrackingData(urlParameters,params);
+                break;
+
+
+
+
 
 
 
@@ -88,6 +101,7 @@ public class GetToken {
         if(deviceInfo1!=null &&  !(this.context instanceof SplashActivity)) {
             deviceId = deviceInfo1.bindIds();
         }
+        Log.d("aaaaa","print url JSON = "+BMAGson.store().toJson(urlParameters));
 
         String requestId = UUID.randomUUID().toString();
 
@@ -96,6 +110,7 @@ public class GetToken {
         jsonData.put("requestUrl", subUrl);
         jsonData.put("deviceId", deviceId);
         jsonData.put("app_version", appVersion);
+
 
         return new Gson().toJson(jsonData);
     }
@@ -156,6 +171,23 @@ public class GetToken {
 
         return urlParameters;
     }
+    public Map<String, String> getSpareTabData(Map<String, String> urlParameters,
+                                          String[] params) {
+        try {
+
+            urlParameters.put("booking_id", params[1]);
+
+
+
+
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return urlParameters;
+    }
+
 
     public Map<String, String> engineerHomeScreen(Map<String, String> urlParameters, String[] params) {
         try {
@@ -181,6 +213,70 @@ public class GetToken {
 
         return urlParameters;
     }
+    public Map<String, String> submitEscalation(Map<String, String> urlParameters,
+                                               String[] params) {
+        try {
+            urlParameters.put("entity_type", params[1]);
+            urlParameters.put("booking_id", params[2]);
+            urlParameters.put("escalation_reason_id", params[3]);
+            urlParameters.put("escalation_remarks", params[4]);
+
+
+
+
+
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return urlParameters;
+    }
+    public Map<String, String> getEscalationReason(Map<String, String> urlParameters,
+                                                String[] params) {
+        try {
+            //urlParameters.put("appliance_id", params[2]);
+            urlParameters.put("entity_type", params[1]);
+           // urlParameters.put("is_repeat ", params[3]);
+            //urlParameters.put("show_all_capacity  ", params[4]);
+
+
+
+
+
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return urlParameters;
+    }
+    public Map<String, String> getTrackingData(Map<String, String> urlParameters,
+                                                   String[] params) {
+        try {
+
+
+            //urlParameters.put("appliance_id", params[2]);
+            urlParameters.put("carrier_code", params[1]);
+            urlParameters.put("awb_number", params[2]);
+            // urlParameters.put("is_repeat ", params[3]);
+            //urlParameters.put("show_all_capacity  ", params[4]);
+
+
+
+
+
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return urlParameters;
+    }
+
+
+
+
 
 
 

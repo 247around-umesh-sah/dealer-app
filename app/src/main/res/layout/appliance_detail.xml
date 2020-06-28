@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.example.dealerapp.component.BMACardView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.example.RetailApp.component.BMACardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
@@ -28,21 +28,31 @@
                 android:layout_height="@dimen/_25dp"
                 android:background="@drawable/brandname"
                 ></ImageView>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sourcesanspro_regular"
+                android:paddingLeft="@dimen/_10dp"
+                android:text="Brand"
+                android:layout_weight=".5"
+                android:textSize="@dimen/_16dp" />
 
             <TextView
                 android:id="@+id/brandName"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/sourcesanspro_regular"
-                android:padding="@dimen/_10dp"
-                android:text="Brand Name"
+                android:paddingLeft="@dimen/_10dp"
+                android:text="Not Available"
+                android:layout_weight=".5"
                 android:textSize="@dimen/_16dp" />
         </LinearLayout>
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/_10dp"
+            android:visibility="gone"
             android:orientation="horizontal">
 
 
@@ -51,14 +61,56 @@
                 android:layout_height="@dimen/_25dp"
                 android:background="@drawable/capacity_appliance"
                 ></ImageView>
-
             <TextView
-                android:id="@+id/capacityName"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/sourcesanspro_regular"
                 android:paddingLeft="@dimen/_10dp"
+                android:text="Category"
+                android:layout_weight=".5"
+                android:textSize="@dimen/_16dp" />
+
+            <TextView
+                android:id="@+id/category"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sourcesanspro_regular"
+                android:paddingLeft="@dimen/_10dp"
+                android:layout_weight=".5"
                 android:text="Capacity Appliance"
+                android:textSize="@dimen/_16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/_10dp"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="@dimen/_25dp"
+                android:layout_height="@dimen/_25dp"
+                android:background="@drawable/capacity_appliance"
+                ></ImageView>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sourcesanspro_regular"
+                android:paddingLeft="@dimen/_10dp"
+                android:text="Capacity"
+                android:layout_weight=".5"
+                android:textSize="@dimen/_16dp" />
+
+            <TextView
+                android:id="@+id/capacityName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sourcesanspro_regular"
+                android:paddingLeft="@dimen/_10dp"
+                android:layout_weight=".5"
+                android:text="Not Available"
                 android:textSize="@dimen/_16dp" />
         </LinearLayout>
 
@@ -74,56 +126,55 @@
                 android:layout_height="@dimen/_25dp"
                 android:background="@drawable/sf_model_number"
                 ></ImageView>
+            <TextView
 
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_10dp"
+                android:text="Model Number"
+                android:fontFamily="@font/sourcesanspro_regular"
+                android:layout_weight=".5"
+                android:textSize="@dimen/_16dp" />
             <TextView
                 android:id="@+id/sfModelNumber"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/sourcesanspro_regular"
                 android:paddingLeft="@dimen/_10dp"
-                android:text="REF VI203PTDR-FDK"
-                android:layout_weight="1"
+                android:layout_weight=".5"
+                android:text="Not Available"
                 android:textSize="@dimen/_16dp" />
 
-            <TextView
 
-                android:layout_width="@dimen/_150dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/_10dp"
-                android:gravity="right"
-                android:paddingLeft="@dimen/_10dp"
-                android:text="SF Model Number"
-                android:textColor="@color/cyan"
-                android:textSize="@dimen/_13dp" />
         </LinearLayout>
 
-        <LinearLayout
-            android:id="@+id/cityLayout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_10dp"
-            android:orientation="horizontal">
+<!--        <LinearLayout-->
+<!--            android:id="@+id/cityLayout"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="@dimen/_10dp"-->
+<!--            android:orientation="horizontal">-->
 
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/sourcesanspro_regular"
-                android:text="City :"
-                android:textSize="@dimen/_17dp" />
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:fontFamily="@font/sourcesanspro_regular"-->
+<!--                android:text="City :"-->
+<!--                android:textSize="@dimen/_17dp" />-->
 
-            <TextView
+<!--            <TextView-->
 
-                android:id="@+id/city"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/_10dp"
+<!--                android:id="@+id/city"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="@dimen/_10dp"-->
 
-                android:paddingLeft="@dimen/_10dp"
-                android:text="Dehradun"
-                android:fontFamily="@font/sourcesanspro_regular"
-                android:textSize="@dimen/_14dp" />
-        </LinearLayout>
+<!--                android:paddingLeft="@dimen/_10dp"-->
+<!--                android:text="Dehradun"-->
+<!--                android:fontFamily="@font/sourcesanspro_regular"-->
+<!--                android:textSize="@dimen/_14dp" />-->
+<!--        </LinearLayout>-->
 
         <LinearLayout
             android:id="@+id/applianceModelNumberLayout"
@@ -140,26 +191,27 @@
                 android:background="@drawable/appliance_model_number"
                 ></ImageView>
             <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/_10dp"
+                android:text="SF Model Number"
+                android:fontFamily="@font/sourcesanspro_regular"
+                android:layout_weight=".5"
+                android:textSize="@dimen/_16dp" />
+            <TextView
                 android:id="@+id/applianceModelNumber"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/sourcesanspro_regular"
                 android:paddingLeft="@dimen/_10dp"
                 android:paddingRight="@dimen/_10dp"
-                android:text="REF VI203PTDR-FDK"
-                android:layout_weight="1"
+                android:text="Not Available"
+                android:layout_weight=".5"
                 android:textSize="@dimen/_16dp" />
 
-            <TextView
 
-                android:layout_width="@dimen/_150dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/_10dp"
-                android:gravity="right|center_vertical"
-                android:paddingLeft="@dimen/_10dp"
-                android:text="Appliance Model Number"
-                android:textColor="@color/cyan"
-                android:textSize="@dimen/_14dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -176,12 +228,21 @@
                 android:background="@drawable/amounticon"
                 ></ImageView>
             <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sourcesanspro_regular"
+                android:paddingLeft="@dimen/_10dp"
+                android:text="Amount"
+                android:layout_weight=".5"
+                android:textSize="@dimen/_16dp" />
+            <TextView
                 android:id="@+id/amount"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/sourcesanspro_regular"
                 android:paddingLeft="@dimen/_10dp"
                 android:text="0.00  RS"
+                android:layout_weight=".5"
                 android:textSize="@dimen/_16dp" />
         </LinearLayout>
 
@@ -189,6 +250,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/_10dp"
             android:orientation="horizontal">
 
             <ImageView
@@ -198,25 +260,25 @@
                 ></ImageView>
 
             <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="SF/Partner Serial Number"
+                android:paddingLeft="@dimen/_10dp"
+                android:layout_weight=".5"
+                android:fontFamily="@font/sourcesanspro_regular"
+                android:textSize="@dimen/_16dp" />
+            <TextView
                 android:id="@+id/applianceSerialNumber"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/sourcesanspro_regular"
                 android:paddingLeft="@dimen/_10dp"
-                android:text="REF VI203PTDR-FDK"
-                android:layout_weight="1"
+                android:text="Not Available"
+                android:layout_weight=".5"
                 android:textSize="@dimen/_16dp" />
 
-            <TextView
 
-                android:layout_width="@dimen/_150dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/_10dp"
-                android:gravity="right"
-                android:padding="@dimen/_10dp"
-                android:text="Appliance Serial Number"
-                android:textColor="@color/cyan"
-                android:textSize="@dimen/_14dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -231,14 +293,87 @@
                 android:layout_height="@dimen/_25dp"
                 android:background="@drawable/calltype"
                 ></ImageView>
-
             <TextView
-                android:id="@+id/callType"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/sourcesanspro_regular"
                 android:paddingLeft="@dimen/_10dp"
-                android:text="Call Type | Repair out of Warranty ( Home Visit )"
+                android:text="Request Type"
+                android:layout_weight=".5"
+                android:textSize="@dimen/_16dp" />
+
+            <TextView
+                android:id="@+id/callType"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sourcesanspro_regular"
+                android:paddingLeft="@dimen/_10dp"
+                android:layout_weight=".5"
+                android:text="Not Available"
+                android:textSize="@dimen/_16dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="@dimen/_25dp"
+                android:layout_height="@dimen/_25dp"
+                android:background="@drawable/calltype"
+                ></ImageView>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sourcesanspro_regular"
+                android:paddingLeft="@dimen/_10dp"
+                android:text="Booking Status"
+                android:layout_weight=".5"
+                android:textSize="@dimen/_16dp" />
+
+            <TextView
+                android:id="@+id/bookingstatus"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sourcesanspro_regular"
+                android:paddingLeft="@dimen/_10dp"
+                android:layout_weight=".5"
+                android:text="Not Available"
+                android:textSize="@dimen/_16dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="@dimen/_25dp"
+                android:layout_height="@dimen/_25dp"
+                android:background="@drawable/calltype"
+                ></ImageView>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sourcesanspro_regular"
+                android:paddingLeft="@dimen/_10dp"
+                android:text="Total charges"
+                android:layout_weight=".5"
+                android:textSize="@dimen/_16dp" />
+
+            <TextView
+                android:id="@+id/totalCharges"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sourcesanspro_regular"
+                android:paddingLeft="@dimen/_10dp"
+                android:layout_weight=".5"
+                android:text="Not Available"
                 android:textSize="@dimen/_16dp" />
         </LinearLayout>
 
@@ -246,6 +381,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/_10dp"
             android:orientation="horizontal">
             <ImageView
                 android:layout_width="@dimen/_25dp"
@@ -255,23 +392,24 @@
 
 
             <TextView
-                android:id="@+id/time_slot"
-                android:layout_width="wrap_content"
+                android:id="@+id/timeslot"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_10dp"
+                android:text="Times Slot"
+                android:layout_weight=".5"
+                android:textSize="@dimen/_16dp" />
+            <TextView
+                android:id="@+id/time_slot"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
                 android:fontFamily="@font/sourcesanspro_regular"
                 android:paddingLeft="@dimen/_10dp"
                 android:text="4PM - 7PM"
                 android:textSize="@dimen/_16dp" />
 
-            <TextView
-                android:id="@+id/timeslot"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/_10dp"
-                android:padding="@dimen/_10dp"
-                android:text="Times Slot"
-                android:textColor="@color/cyan"
-                android:textSize="@dimen/_13dp" />
+
         </LinearLayout>
 
         <TextView
@@ -296,4 +434,4 @@
 
     </LinearLayout>
 
-</com.example.dealerapp.component.BMACardView>
+</com.example.RetailApp.component.BMACardView>

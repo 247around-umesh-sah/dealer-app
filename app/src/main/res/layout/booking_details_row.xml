@@ -14,6 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#FFFFFF"
+        android:paddingBottom="@dimen/_10dp"
         android:orientation="vertical"
         >
         <androidx.cardview.widget.CardView
@@ -26,7 +27,8 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="300dp"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/_270dp"
             android:background="@color/grayisWhite"
             android:orientation="vertical"
             >
@@ -34,7 +36,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/colorAccent"
-            android:gravity="center"
+            android:gravity="center_vertical"
             android:orientation="horizontal"
             android:paddingLeft="@dimen/_10dp"
             android:paddingRight="@dimen/_20dp"
@@ -48,11 +50,12 @@
                     android:textColor="#FFFFFF"
                     android:textSize="@dimen/_15dp"
                     android:text="SM-1341421709141"
+                    android:visibility="gone"
                     android:layout_weight="1"
                     android:background="@color/transparentWhite" />
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
 
@@ -92,7 +95,7 @@
                 android:textSize="@dimen/_20dp"
               />
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
                 android:layout_marginLeft="@dimen/_16dp"
@@ -104,13 +107,23 @@
                     android:layout_height="@dimen/_25dp"
                     android:background="@drawable/addressicon"
                     ></ImageView>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Address"
+                    android:fontFamily="@font/sourcesanspro_regular"
+                    android:paddingLeft="@dimen/_10dp"
+                    android:paddingRight="@dimen/_10dp"
+                    android:layout_weight=".5"
+                    android:textSize="@dimen/_16dp"
+                    />
             <TextView
                 android:id="@+id/address"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="address"
+                android:text="Not Available"
+                android:layout_weight=".5"
                 android:fontFamily="@font/sourcesanspro_regular"
-                android:paddingLeft="@dimen/_10dp"
                 android:paddingRight="@dimen/_10dp"
                 android:textSize="@dimen/_16dp"
                 />
@@ -121,24 +134,107 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/_16dp"
                 android:layout_marginRight="@dimen/_16dp"
+                android:layout_marginTop="@dimen/_10dp"
+                android:gravity="center_vertical"
                 android:orientation="horizontal">
 
 
+                <ImageView
+                    android:layout_width="@dimen/_25dp"
+                    android:layout_height="@dimen/_25dp"
+
+                    android:background="@drawable/addressicon"
+                    ></ImageView>
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="Pin Code :- "
+                android:text="Pin Code "
+                android:paddingLeft="@dimen/_10dp"
+                android:layout_weight=".5"
                 android:textSize="@dimen/_16dp"
                 />
                 <TextView
                     android:id="@+id/pincode"
-                    android:layout_width="match_parent"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text=""
+                    android:text="Not Available"
+                    android:layout_weight=".5"
                     android:fontFamily="@font/sourcesanspro_regular"
-                    android:padding="@dimen/_10dp"
+                    android:padding="@dimen/_2dp"
+                    android:paddingLeft="@dimen/_10dp"
                     android:textSize="@dimen/_16dp"
                     />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/cityLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10dp"
+                android:layout_marginLeft="@dimen/_16dp"
+                android:layout_marginRight="@dimen/_16dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="@dimen/_25dp"
+                    android:layout_height="@dimen/_25dp"
+                    android:background="@drawable/addressicon"
+                    ></ImageView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sourcesanspro_regular"
+                    android:text="City "
+                    android:paddingLeft="@dimen/_10dp"
+                    android:layout_weight=".5"
+                    android:textSize="@dimen/_16dp" />
+
+                <TextView
+
+                    android:id="@+id/city"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:padding="@dimen/_2dp"
+                    android:paddingLeft="@dimen/_10dp"
+                    android:text="Not Available"
+                    android:fontFamily="@font/sourcesanspro_regular"
+                    android:textSize="@dimen/_16dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/stateLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10dp"
+                android:layout_marginLeft="@dimen/_16dp"
+                android:layout_marginRight="@dimen/_16dp"
+                android:visibility="visible"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="@dimen/_25dp"
+                    android:layout_height="@dimen/_25dp"
+                    android:background="@drawable/state"
+                    ></ImageView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sourcesanspro_regular"
+                    android:text="State "
+                    android:paddingLeft="@dimen/_10dp"
+                    android:layout_weight=".5"
+                    android:textSize="@dimen/_16dp" />
+
+                <TextView
+
+                    android:id="@+id/state"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:padding="@dimen/_2dp"
+                    android:paddingLeft="@dimen/_10dp"
+                    android:text="Not Available"
+                    android:fontFamily="@font/sourcesanspro_regular"
+                    android:textSize="@dimen/_16dp" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -146,6 +242,7 @@
                 android:gravity="center_vertical"
                 android:layout_marginLeft="@dimen/_16dp"
                 android:layout_marginRight="@dimen/_16dp"
+                android:layout_marginTop="@dimen/_10dp"
                 android:orientation="horizontal">
                 <ImageView
                     android:layout_width="@dimen/_25dp"
@@ -155,19 +252,83 @@
 
             <TextView
                 android:id="@+id/amount"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="300 RS"
+                android:text="Amount"
+                android:layout_weight=".5"
                 android:paddingLeft="@dimen/_10dp"
                 android:textSize="@dimen/_16dp"
                 />
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:id="@+id/amountPaid"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="Not Paid"
-                    android:padding="@dimen/_10dp"
+                    android:padding="@dimen/_2dp"
                     android:paddingLeft="@dimen/_10dp"
+                    android:layout_weight=".5"
+                    android:textSize="@dimen/_16dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_16dp"
+                android:layout_marginRight="@dimen/_16dp"
+                android:layout_marginTop="@dimen/_10dp"
+                android:visibility="visible"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="@dimen/_25dp"
+                    android:layout_height="@dimen/_25dp"
+                    android:background="@drawable/mobile"
+                    ></ImageView>
+
+                <TextView
+                    android:id="@+id/mobileno"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile Number"
+                    android:layout_weight=".5"
+                    android:paddingLeft="@dimen/_10dp"
+                    android:textSize="@dimen/_16dp"
+                    />
+                <TextView
+                    android:id="@+id/mobileNumber"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_2dp"
+                    android:paddingLeft="@dimen/_10dp"
+                    android:layout_weight=".5"
+                    android:text="Not Available"
                     android:textSize="@dimen/_14dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_20dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/currentstatusTextview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Current Status  -"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/_15dp"
+                    />
+                <TextView
+                    android:id="@+id/currentstatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="@dimen/_10dp"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/_15dp"
                     />
             </LinearLayout>
 
@@ -219,7 +380,9 @@
                         android:layout_centerInParent="true"
                         android:background="@color/gray"
                         ></View>
+
                     <ImageView
+                        android:id="@+id/expandIcon"
                         android:layout_width="@dimen/_40dp"
                         android:layout_height="@dimen/_40dp"
                         android:layout_alignParentRight="true"
@@ -233,6 +396,7 @@
 
 
             <LinearLayout
+                android:id="@+id/expandLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/grayisWhite"
@@ -254,27 +418,27 @@
                         android:layout_height="@dimen/_25dp"
                         android:background="@drawable/dateicon"
                         ></ImageView>
-
-                <TextView
-                    android:id="@+id/bookingdate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="07-04-2020"
-                    android:fontFamily="@font/sourcesanspro_regular"
-                    android:paddingLeft="@dimen/_10dp"
-                    android:paddingRight="@dimen/_10dp"
-                    android:textSize="@dimen/_16dp"
-                    />
                     <TextView
-
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:text="booking Date"
-                        android:paddingLeft="@dimen/_10dp"
+                        android:text="Booking Date"
                         android:textSize="@dimen/_14dp"
                         android:layout_marginLeft="@dimen/_10dp"
                         android:textColor="@color/cyan"
+                        android:layout_weight=".5"
                         />
+                <TextView
+                    android:id="@+id/bookingdate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Not Available"
+                    android:fontFamily="@font/sourcesanspro_regular"
+                    android:paddingLeft="@dimen/_5dp"
+                    android:paddingRight="@dimen/_10dp"
+                    android:textSize="@dimen/_16dp"
+                    android:layout_weight=".5"
+                    />
+
                 </LinearLayout>
                 <LinearLayout
                     android:id="@+id/closedbookindateLayout"
@@ -291,27 +455,64 @@
                     <ImageView
                         android:layout_width="@dimen/_25dp"
                         android:layout_height="@dimen/_25dp"
-                        android:background="@drawable/addressicon"
+                        android:background="@drawable/dateicon"
                         ></ImageView>
                     <TextView
-                        android:id="@+id/closeddate"
-                        android:layout_width="wrap_content"
+
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:text="07-04-2020"
-                        android:fontFamily="@font/sourcesanspro_regular"
-                        android:paddingLeft="@dimen/_10dp"
-                        android:textSize="@dimen/_16dp"
+                        android:text="Closed Date"
+                        android:textSize="@dimen/_14dp"
+                        android:layout_marginLeft="@dimen/_10dp"
+                        android:textColor="@color/red1"
+                        android:layout_weight=".5"
                         />
                     <TextView
-
-                        android:layout_width="match_parent"
+                        android:id="@+id/closeddate"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:text="closed Date"
-                        android:paddingLeft="@dimen/_10dp"
-                        android:textSize="@dimen/_14dp"
-                        android:layout_marginLeft="@dimen/_20dp"
-                        android:textColor="@color/red1"
+                        android:text="Not Available"
+                        android:fontFamily="@font/sourcesanspro_regular"
+                        android:paddingLeft="@dimen/_5dp"
+                        android:textSize="@dimen/_16dp"
+                        android:layout_weight=".5"
                         />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:layout_marginLeft="@dimen/_16dp"
+                    android:layout_marginRight="@dimen/_16dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="@dimen/_25dp"
+                        android:layout_height="@dimen/_25dp"
+                        android:background="@drawable/times_slot"
+                        ></ImageView>
+
+
+                    <TextView
+                        android:id="@+id/timeslot"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/_10dp"
+                        android:text="Times Slot"
+                        android:layout_weight=".5"
+                        android:textSize="@dimen/_16dp" />
+                    <TextView
+                        android:id="@+id/time_slot"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:fontFamily="@font/sourcesanspro_regular"
+                        android:paddingLeft="@dimen/_10dp"
+                        android:text="Not Available"
+                        android:textSize="@dimen/_16dp" />
+
+
                 </LinearLayout>
 
                 <LinearLayout
@@ -331,13 +532,100 @@
                         android:background="@drawable/symptom"
                         ></ImageView>
                     <TextView
-                        android:id="@+id/symptom"
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:text="Symptom (at the time of booking creation )"
+                        android:text="Symptom "
                         android:fontFamily="@font/sourcesanspro_regular"
                         android:textSize="@dimen/_16dp"
                         android:paddingLeft="@dimen/_10dp"
+                        android:layout_weight=".5"
+                        />
+                    <TextView
+                        android:id="@+id/symptom"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Not Available"
+                        android:fontFamily="@font/sourcesanspro_regular"
+
+                        android:textSize="@dimen/_16dp"
+                        android:paddingLeft="@dimen/_10dp"
+                        android:layout_weight=".5"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/scheduledReasonLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/_16dp"
+                    android:layout_marginRight="@dimen/_16dp"
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:visibility="visible"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/_25dp"
+                        android:layout_height="@dimen/_25dp"
+                        android:background="@drawable/schedule_reason"
+                        ></ImageView>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Scheduled Reason "
+                        android:fontFamily="@font/sourcesanspro_regular"
+                        android:textSize="@dimen/_16dp"
+                        android:paddingLeft="@dimen/_10dp"
+                        android:layout_weight=".5"
+                        />
+                    <TextView
+                        android:id="@+id/scheduleReason"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Not Available"
+                        android:fontFamily="@font/sourcesanspro_regular"
+
+                        android:textSize="@dimen/_16dp"
+                        android:paddingLeft="@dimen/_10dp"
+                        android:layout_weight=".5"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/cancelledReasonLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/_16dp"
+                    android:layout_marginRight="@dimen/_16dp"
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:visibility="visible"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/_25dp"
+                        android:layout_height="@dimen/_25dp"
+                        android:background="@drawable/cancel_reason"
+                        ></ImageView>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Cancelled Reason "
+                        android:fontFamily="@font/sourcesanspro_regular"
+                        android:textSize="@dimen/_16dp"
+                        android:paddingLeft="@dimen/_10dp"
+                        android:layout_weight=".5"
+                        />
+                    <TextView
+                        android:id="@+id/cancelledReason"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Not Available"
+                        android:fontFamily="@font/sourcesanspro_regular"
+
+                        android:textSize="@dimen/_16dp"
+                        android:paddingLeft="@dimen/_10dp"
+                        android:layout_weight=".5"
                         />
                 </LinearLayout>
                 <LinearLayout
@@ -357,13 +645,24 @@
                         android:background="@drawable/remarks"
                         ></ImageView>
                     <TextView
-                        android:id="@+id/remarks"
-                        android:layout_width="match_parent"
+
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:text="Remarks on the screen"
+                        android:text="Remarks"
                         android:fontFamily="@font/sourcesanspro_regular"
-                        android:paddingLeft="@dimen/_10dp"
                         android:textSize="@dimen/_16dp"
+                        android:paddingLeft="@dimen/_10dp"
+                        android:layout_weight=".5"
+                        />
+                    <TextView
+                        android:id="@+id/remarks"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Not Available"
+                        android:fontFamily="@font/sourcesanspro_regular"
+                        android:textSize="@dimen/_16dp"
+                        android:paddingLeft="@dimen/_10dp"
+                        android:layout_weight=".5"
                         />
                 </LinearLayout>
 

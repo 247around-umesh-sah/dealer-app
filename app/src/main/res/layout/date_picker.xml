@@ -9,7 +9,7 @@
         android:layout_weight="1"
         android:orientation="horizontal">
 
-        <com.example.dealerapp.component.BMACardView
+        <com.example.RetailApp.component.BMACardView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="4dp">
@@ -60,7 +60,7 @@
                     android:textColor="@color/text_color"
                     android:textSize="12dp" />
             </LinearLayout>
-        </com.example.dealerapp.component.BMACardView>
+        </com.example.RetailApp.component.BMACardView>
     </LinearLayout>
 
 </LinearLayout>

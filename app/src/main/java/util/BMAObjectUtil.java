@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.TextView;
 
 
-import com.example.dealerapp.entity.BMAObject;
+import com.example.RetailApp.entity.BMAObject;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.internal.Primitives;
 

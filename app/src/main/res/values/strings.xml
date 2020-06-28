@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">DealerApp</string>
+    <string name="app_name">RetailApp</string>
     <string name="reallyExit">Do you really want to exit?</string>
     <string name="enterAmount">Enter Amount</string>
     <string name="exitConfirmInfo">Press back again to exit</string>

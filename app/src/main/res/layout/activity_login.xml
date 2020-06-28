@@ -60,7 +60,7 @@
                     android:background="@drawable/login_rounded_drawable"
                     android:gravity="center"
                     >
-                    <com.example.dealerapp.component.BMAFontViewField
+                    <com.example.RetailApp.component.BMAFontViewField
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
 
@@ -94,7 +94,7 @@
                     android:layout_marginTop="@dimen/_10dp"
                     android:background="@drawable/login_rounded_drawable"
                     android:orientation="horizontal">
-                    <com.example.dealerapp.component.BMAFontViewField
+                    <com.example.RetailApp.component.BMAFontViewField
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:text="@string/icon_password"

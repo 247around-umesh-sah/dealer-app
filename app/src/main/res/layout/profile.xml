@@ -62,7 +62,7 @@ android:background="@drawable/card_gradient_color"
 
             </LinearLayout>
 
-            <com.example.dealerapp.component.BMACardView
+            <com.example.RetailApp.component.BMACardView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="@dimen/_10dp"
@@ -208,7 +208,7 @@ android:background="@drawable/card_gradient_color"
 
 
                 </LinearLayout>
-            </com.example.dealerapp.component.BMACardView>
+            </com.example.RetailApp.component.BMACardView>
 
 
 

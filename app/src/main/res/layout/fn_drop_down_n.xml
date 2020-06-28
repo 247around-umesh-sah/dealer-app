@@ -12,7 +12,7 @@
         android:id="@+id/titleView"
         android:visibility="gone" />
 
-    <com.example.dealerapp.component.BMACardView
+    <com.example.RetailApp.component.BMACardView
         android:id="@+id/bodyContainer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -36,7 +36,7 @@
                 android:layout_marginRight="5dp"
                 android:visibility="gone" />
 
-            <com.example.dealerapp.component.BMAFontViewField
+            <com.example.RetailApp.component.BMAFontViewField
                 android:id="@+id/rowIcon"
                 android:layout_width="25dp"
                 android:layout_height="match_parent"
@@ -58,7 +58,7 @@
                 android:textColorHint="@color/text_color"
                 android:textSize="14dp" />
 
-            <com.example.dealerapp.component.BMAFontViewField
+            <com.example.RetailApp.component.BMAFontViewField
                 android:id="@+id/caretIcon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -68,5 +68,5 @@
                 android:textColor="@color/appTheamColor"
                 android:textSize="16dp" />
         </LinearLayout>
-    </com.example.dealerapp.component.BMACardView>
+    </com.example.RetailApp.component.BMACardView>
 </LinearLayout>

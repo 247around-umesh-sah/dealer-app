@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/_100dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100dp"
+            android:layout_marginRight="@dimen/_20dp"
+            android:layout_marginLeft="@dimen/_10dp">
+
+<!--            <com.example.dealerapp.component.BMAFontViewField-->
+<!--                android:id="@+id/roundImage"-->
+<!--                android:layout_width="@dimen/_30dp"-->
+<!--                android:layout_height="@dimen/_30dp"-->
+<!--                android:text="@string/icon_circle_fill"-->
+<!--                android:textColor="@color/darkNavy"-->
+<!--                android:textSize="@dimen/_22dp"-->
+<!--                ></com.example.dealerapp.component.BMAFontViewField>-->
+            <ImageView
+                android:id="@+id/roundImage"
+                android:layout_width="@dimen/_25dp"
+                android:layout_height="@dimen/_25dp"
+                android:background="@drawable/round_green_icon"
+                ></ImageView>
+        <View
+            android:id="@+id/sideColorBar"
+            android:layout_width="@dimen/_2dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_11dp"
+            android:background="@color/black_color" />
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="@dimen/_25dp"
+            android:layout_height="@dimen/_25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="23dp"
+            android:visibility="gone"
+            android:background="@drawable/dateicon"
+            android:tint="@color/blue4" />
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="@dimen/_100dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/arrow"
+                android:layout_marginLeft="@dimen/_32dp"
+                android:text="2020-03-19 13:41:00"
+                ></TextView>
+            <TextView
+                android:id="@+id/statusText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/date"
+                android:layout_marginLeft="@dimen/_20dp"
+                android:text="Delivery Manifest Prepared For Nalasopara-I"
+                ></TextView>
+        </RelativeLayout>
+
+
+</RelativeLayout>

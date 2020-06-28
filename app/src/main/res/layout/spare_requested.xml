@@ -1,566 +1,868 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:padding="@dimen/_8dp"
-    android:layout_height="match_parent">
-    <LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/_5dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        >
-
+        android:layout_height="match_parent">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:orientation="vertical"
             >
-            <TextView
-                android:layout_width="0dp"
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Spare ID "
-                android:textStyle="bold"
-                android:layout_weight=".5"
-                android:textSize="@dimen/_16dp">
+                android:layout_marginBottom="@dimen/_5dp"
+                android:padding="@dimen/_5dp"
+                app:cardElevation="5dp">
 
-            </TextView>
-            <TextView
-                android:id="@+id/spareID"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/_10dp"
-                android:textSize="@dimen/_16dp"
-                android:text="32541"
 
-                android:layout_weight=".5">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/_12dp">
 
-            </TextView>
-        </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:text="Spare ID "
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_16dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/spareID"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10dp"
+                        android:layout_weight=".5"
+                        android:text="32541"
+
+                        android:textSize="@dimen/_16dp">
+
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_5dp"
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:text="Partner/Warehouse "
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_16dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/partner_warehouse"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10dp"
+                        android:layout_weight=".5"
+                        android:text="Ghaziabad Warehouse"
+                        android:textSize="@dimen/_16dp">
+
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:paddingLeft="@dimen/_5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:text="Model Number "
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_16dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/modelnumber"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10dp"
+                        android:layout_weight=".5"
+                        android:text="REF VE183EBR-FDS"
+                        android:textSize="@dimen/_16dp">
+
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:paddingLeft="@dimen/_5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:text="Original Requested Part"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_16dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/originalrequestedpart"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10dp"
+                        android:layout_weight=".5"
+                        android:text="COMPRESSOR,WITH ASSESORIES,ASA45AA 1100100025"
+                        android:textSize="@dimen/_16dp">
+
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/partDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Part Details"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/_18dp"
+                        android:textStyle="bold"></TextView>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:layout_marginLeft="@dimen/_10dp"
+                        android:layout_weight="1">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_3dp"
+                            android:layout_centerInParent="true"
+                            android:background="@color/gray"></View>
+
+                        <ImageView
+                            android:id="@+id/partDetailExpandIcon"
+                            android:layout_width="@dimen/_25dp"
+                            android:layout_height="@dimen/_35dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/_30dp"
+                            android:background="@drawable/downexpandicon">
+
+                        </ImageView>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/partDetialCardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5dp"
+                    android:layout_marginTop="@dimen/_5dp"
+                    android:layout_marginRight="@dimen/_5dp"
+                    android:layout_marginBottom="@dimen/_5dp"
+                    android:visibility="gone"
+                    app:cardCornerRadius="@dimen/_10dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_8dp"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".5"
+                                android:text="Serial Number"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/_16dp">
+
+                            </TextView>
+
+                            <TextView
+                                android:id="@+id/serialNumber"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10dp"
+                                android:layout_weight=".5"
+                                android:text="390116260105302239"
+                                android:textSize="@dimen/_16dp">
+
+                            </TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".5"
+                                android:text="Final Requested Part"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/_16dp">
+
+                            </TextView>
+
+                            <TextView
+                                android:id="@+id/finalRequestedPart"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10dp"
+                                android:layout_weight=".5"
+                                android:text="COMPRESSOR,WITH ASSESORIES,ASA45AA 1100100025"
+                                android:textSize="@dimen/_16dp">
+
+                            </TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".5"
+                                android:text="Parts Type"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/_16dp">
+
+                            </TextView>
+
+                            <TextView
+                                android:id="@+id/partsType"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10dp"
+                                android:layout_weight=".5"
+                                android:text="COMPRESSOR"
+                                android:textSize="@dimen/_16dp">
+
+                            </TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".5"
+                                android:text="Parts Warranty Status"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/_16dp">
+
+                            </TextView>
+
+                            <TextView
+                                android:id="@+id/partsWarrantyStatus"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10dp"
+                                android:layout_weight=".5"
+                                android:text="In-Warranty"
+                                android:textSize="@dimen/_16dp">
+
+                            </TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".5"
+                                android:text="Date Of Purchase"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/_16dp">
+
+                            </TextView>
+
+                            <TextView
+                                android:id="@+id/dateOfPurchase"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10dp"
+                                android:layout_weight=".5"
+                                android:text="16-06-2016"
+                                android:textSize="@dimen/_16dp">
+
+                            </TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".5"
+                                android:text="Requested Quantity"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/_16dp">
+
+                            </TextView>
+
+                            <TextView
+                                android:id="@+id/requestedQuantity"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10dp"
+                                android:layout_weight=".5"
+                                android:text="1"
+                                android:textSize="@dimen/_16dp">
+
+                            </TextView>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <LinearLayout
+                    android:id="@+id/partDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Date Action"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/_18dp"
+                        android:textStyle="bold"></TextView>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:layout_marginLeft="@dimen/_10dp"
+                        android:layout_weight="1">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_3dp"
+                            android:layout_centerInParent="true"
+                            android:background="@color/gray"></View>
+
+                        <ImageView
+                            android:id="@+id/dateExpandIcon"
+                            android:layout_width="@dimen/_25dp"
+                            android:layout_height="@dimen/_35dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/_30dp"
+                            android:background="@drawable/downexpandicon">
+
+                        </ImageView>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/partDateCardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5dp"
+                    android:layout_marginTop="@dimen/_5dp"
+                    android:layout_marginRight="@dimen/_5dp"
+                    android:layout_marginBottom="@dimen/_5dp"
+                    android:visibility="gone"
+                    app:cardCornerRadius="@dimen/_10dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_8dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".5"
+                                android:textStyle="bold"
+                                android:text="Requested Date"
+                                android:textSize="@dimen/_16dp">
+
+                            </TextView>
+
+                            <TextView
+                                android:id="@+id/requestedDate"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10dp"
+                                android:layout_weight=".5"
+                                android:text="12-05-2019 02:29:PM"
+                                android:textSize="@dimen/_16dp">
+
+                            </TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".5"
+                                android:text="Approval Date"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/_16dp"
+                              >
+
+                            </TextView>
+
+                            <TextView
+                                android:id="@+id/approvalDate"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10dp"
+                                android:layout_weight=".5"
+                                android:text="Not Available"
+                                android:textSize="@dimen/_16dp">
+
+                            </TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".5"
+                                android:text="Acknowledge Date By SF"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/_16dp">
+
+                            </TextView>
+
+                            <TextView
+                                android:id="@+id/acknowledgeDateBYSF"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10dp"
+                                android:layout_weight=".5"
+                                android:text="Not Available"
+                                android:textSize="@dimen/_16dp">
+
+                            </TextView>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".5"
+                                android:text="Remarks By SC"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/_16dp">
+
+                            </TextView>
+
+                            <TextView
+                                android:id="@+id/remarksBySC"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10dp"
+                                android:layout_weight=".5"
+                                android:text="dead"
+                                android:textSize="@dimen/_16dp">
+
+                            </TextView>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <LinearLayout
+                    android:id="@+id/partStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Part Status"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_18dp"
+                       ></TextView>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:layout_marginLeft="@dimen/_10dp"
+                        android:layout_weight="1">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_3dp"
+                            android:layout_centerInParent="true"
+                            android:background="@color/gray"></View>
+
+                        <ImageView
+                            android:id="@+id/statusExpandIcon"
+                            android:layout_width="@dimen/_25dp"
+                            android:layout_height="@dimen/_35dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/_30dp"
+                            android:background="@drawable/downexpandicon">
+
+                        </ImageView>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/partStatusCardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5dp"
+                    android:layout_marginTop="@dimen/_5dp"
+                    android:layout_marginRight="@dimen/_5dp"
+                    android:layout_marginBottom="@dimen/_5dp"
+                    android:visibility="gone"
+                    app:cardCornerRadius="@dimen/_10dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_8dp"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".5"
+                                android:text="Current Status"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/_16dp">
+
+                            </TextView>
+
+                            <TextView
+                                android:id="@+id/currentStatus"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10dp"
+                                android:layout_weight=".5"
+                                android:text="dead"
+                                android:textSize="@dimen/_16dp">
+
+                            </TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".5"
+                                android:text="Spare Cancellation Reason"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/_16dp">
+
+                            </TextView>
+
+                            <TextView
+                                android:id="@+id/spareCancellationReason"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10dp"
+                                android:layout_weight=".5"
+                                android:text="Not Available"
+                                android:textSize="@dimen/_16dp">
+
+                            </TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".5"
+                                android:text="Consumption"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/_16dp">
+
+                            </TextView>
+
+                            <TextView
+                                android:id="@+id/Consumption"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10dp"
+                                android:layout_weight=".5"
+                                android:text="Yes"
+                                android:textSize="@dimen/_16dp">
+
+                            </TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".5"
+                                android:text="Consumption Reason"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/_16dp">
+
+                            </TextView>
+
+                            <TextView
+                                android:id="@+id/consumptionReason"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10dp"
+                                android:layout_weight=".5"
+                                android:text="Not Available"
+                                android:textSize="@dimen/_16dp">
+
+                            </TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".5"
+                                android:text="Consumption Remarks"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/_16dp">
+
+                            </TextView>
+
+                            <TextView
+                                android:id="@+id/ConsumptionRemarks"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10dp"
+                                android:layout_weight=".5"
+                                android:text="Not Available"
+                                android:textSize="@dimen/_16dp">
+
+                            </TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10dp"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".5"
+                                android:text="Move To Vendor"
+                                android:textSize="@dimen/_16dp">
+
+                            </TextView>
+
+                            <TextView
+                                android:id="@+id/MoveToVendor"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10dp"
+                                android:layout_weight=".5"
+                                android:text="Not Available"
+                                android:textSize="@dimen/_16dp">
+
+                            </TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10dp"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".5"
+                                android:text="Move To Partner"
+                                android:textSize="@dimen/_16dp">
+
+                            </TextView>
+
+                            <TextView
+                                android:id="@+id/MoveToPartner"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10dp"
+                                android:layout_weight=".5"
+                                android:text="Not Available"
+                                android:textSize="@dimen/_16dp">
+
+                            </TextView>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            >
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="Partner/Warehouse "
-                android:textStyle="bold"
-                android:layout_weight=".5"
-                android:textSize="@dimen/_16dp">
-
-            </TextView>
-            <TextView
-                android:id="@+id/partner_warehouse"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/_10dp"
-                android:textSize="@dimen/_16dp"
-                android:text="Ghaziabad Warehouse"
-                android:layout_weight=".5">
-
-            </TextView>
-        </LinearLayout>
-        <LinearLayout
+            android:id="@+id/partTrack"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_10dp"
-            android:orientation="horizontal"
-            >
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="Model Number "
-                android:textStyle="bold"
-                android:layout_weight=".5"
-                android:textSize="@dimen/_16dp">
+            android:paddingLeft="5dp"
+            android:visibility="gone"
+            android:orientation="horizontal">
 
-            </TextView>
             <TextView
-                android:id="@+id/modelnumber"
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="Track Spare Part"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/_18dp"
+                ></TextView>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
                 android:layout_marginLeft="@dimen/_10dp"
-                android:textSize="@dimen/_16dp"
-                android:text="REF VE183EBR-FDS"
-                android:layout_weight=".5">
+                android:layout_weight="1">
 
-            </TextView>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_3dp"
+                    android:layout_centerInParent="true"
+                    android:background="@color/gray"></View>
+
+                <ImageView
+                    android:id="@+id/partTrackIcon"
+                    android:layout_width="@dimen/_28dp"
+                    android:layout_height="@dimen/_30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/_30dp"
+                    android:background="@drawable/expendrighticon">
+
+                </ImageView>
+            </RelativeLayout>
+
         </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_10dp"
-            android:orientation="horizontal"
-            >
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="Original Requested Part"
-                android:textStyle="bold"
-                android:layout_weight=".5"
-                android:textSize="@dimen/_16dp">
-
-            </TextView>
-            <TextView
-                android:id="@+id/originalrequestedpart"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/_10dp"
-                android:textSize="@dimen/_16dp"
-                android:text="COMPRESSOR,WITH ASSESORIES,ASA45AA 1100100025"
-                android:layout_weight=".5">
-
-            </TextView>
         </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            >
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="Final Requested Part"
-                android:textStyle="bold"
-                android:layout_weight=".5"
-                android:textSize="@dimen/_16dp">
-
-            </TextView>
-            <TextView
-                android:id="@+id/finalRequestedPart"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/_10dp"
-                android:textSize="@dimen/_16dp"
-                android:text="COMPRESSOR,WITH ASSESORIES,ASA45AA 1100100025"
-                android:layout_weight=".5">
-
-            </TextView>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_10dp"
-            android:orientation="horizontal"
-            >
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="Parts Type"
-                android:textStyle="bold"
-                android:layout_weight=".5"
-                android:textSize="@dimen/_16dp">
-
-            </TextView>
-            <TextView
-                android:id="@+id/partsType"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/_10dp"
-                android:textSize="@dimen/_16dp"
-                android:text="COMPRESSOR"
-                android:layout_weight=".5">
-
-            </TextView>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_10dp"
-            android:orientation="horizontal"
-            >
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="Parts Warranty Status"
-                android:textStyle="bold"
-                android:layout_weight=".5"
-                android:textSize="@dimen/_16dp">
-
-            </TextView>
-            <TextView
-                android:id="@+id/partsWarrantyStatus"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/_10dp"
-                android:textSize="@dimen/_16dp"
-                android:text="In-Warranty"
-                android:layout_weight=".5">
-
-            </TextView>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_10dp"
-            android:orientation="horizontal"
-            >
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="Requested Quantity"
-                android:textStyle="bold"
-                android:layout_weight=".5"
-                android:textSize="@dimen/_16dp">
-
-            </TextView>
-            <TextView
-                android:id="@+id/requestedQuantity"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/_10dp"
-                android:textSize="@dimen/_16dp"
-                android:text="1"
-                android:layout_weight=".5">
-
-            </TextView>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_10dp"
-            android:orientation="horizontal"
-            >
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="Requested Date"
-                android:textStyle="bold"
-                android:layout_weight=".5"
-                android:textSize="@dimen/_16dp">
-
-            </TextView>
-            <TextView
-                android:id="@+id/requestedDate"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/_10dp"
-                android:textSize="@dimen/_16dp"
-                android:text="12-05-2019 02:29:PM"
-                android:layout_weight=".5">
-
-            </TextView>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_10dp"
-            android:orientation="horizontal"
-            >
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="Approval Date"
-                android:textStyle="bold"
-                android:layout_weight=".5"
-                android:textSize="@dimen/_16dp">
-
-            </TextView>
-            <TextView
-                android:id="@+id/approvalDate"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/_10dp"
-                android:textSize="@dimen/_16dp"
-                android:text="Not Available"
-                android:layout_weight=".5">
-
-            </TextView>
-        </LinearLayout>
-        <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_10dp"
-        android:orientation="horizontal"
-        >
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Date Of Purchase"
-            android:textStyle="bold"
-            android:layout_weight=".5"
-            android:textSize="@dimen/_16dp">
-
-        </TextView>
-        <TextView
-            android:id="@+id/dateOfPurchase"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/_10dp"
-            android:textSize="@dimen/_16dp"
-            android:text="16-06-2016"
-            android:layout_weight=".5">
-
-        </TextView>
-    </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_10dp"
-            android:orientation="horizontal"
-            >
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="Serial Number"
-                android:textStyle="bold"
-                android:layout_weight=".5"
-                android:textSize="@dimen/_16dp">
-
-            </TextView>
-            <TextView
-                android:id="@+id/serialNumber"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/_10dp"
-                android:textSize="@dimen/_16dp"
-                android:text="390116260105302239"
-                android:layout_weight=".5">
-
-            </TextView>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_10dp"
-            android:orientation="horizontal"
-            >
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="Acknowledge Date BY SF"
-                android:textStyle="bold"
-                android:layout_weight=".5"
-                android:textSize="@dimen/_16dp">
-
-            </TextView>
-            <TextView
-                android:id="@+id/acknowledgeDateBYSF"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/_10dp"
-                android:textSize="@dimen/_16dp"
-                android:text="11-06-2019"
-                android:layout_weight=".5">
-
-            </TextView>
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_10dp"
-            android:orientation="horizontal"
-            >
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="Remarks By SC"
-                android:textStyle="bold"
-                android:layout_weight=".5"
-                android:textSize="@dimen/_16dp">
-
-            </TextView>
-            <TextView
-                android:id="@+id/remarksBySC"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/_10dp"
-                android:textSize="@dimen/_16dp"
-                android:text="dead"
-                android:layout_weight=".5">
-
-            </TextView>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_10dp"
-            android:orientation="horizontal"
-            >
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="Current Status"
-                android:textStyle="bold"
-                android:layout_weight=".5"
-                android:textSize="@dimen/_16dp">
-
-            </TextView>
-            <TextView
-                android:id="@+id/currentStatus"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/_10dp"
-                android:textSize="@dimen/_16dp"
-                android:text="dead"
-                android:layout_weight=".5">
-
-            </TextView>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_10dp"
-            android:orientation="horizontal"
-            >
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="Spare Cancellation Reason"
-                android:textStyle="bold"
-                android:layout_weight=".5"
-                android:textSize="@dimen/_16dp">
-
-            </TextView>
-            <TextView
-                android:id="@+id/spareCancellationReason"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/_10dp"
-                android:textSize="@dimen/_16dp"
-                android:text="Not Available"
-                android:layout_weight=".5">
-
-            </TextView>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_10dp"
-            android:orientation="horizontal"
-            >
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="Consumption"
-                android:textStyle="bold"
-                android:layout_weight=".5"
-                android:textSize="@dimen/_16dp">
-
-            </TextView>
-            <TextView
-                android:id="@+id/Consumption"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/_10dp"
-                android:textSize="@dimen/_16dp"
-                android:text="Yes"
-                android:layout_weight=".5">
-
-            </TextView>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_10dp"
-            android:orientation="horizontal"
-            >
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="Consumption Reason"
-                android:textStyle="bold"
-                android:layout_weight=".5"
-                android:textSize="@dimen/_16dp">
-
-            </TextView>
-            <TextView
-                android:id="@+id/consumptionReason"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/_10dp"
-                android:textSize="@dimen/_16dp"
-                android:text="Part Consumed"
-                android:layout_weight=".5">
-
-            </TextView>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_10dp"
-            android:orientation="horizontal"
-            >
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="Consumption Remarks"
-                android:textStyle="bold"
-                android:layout_weight=".5"
-                android:textSize="@dimen/_16dp">
-
-            </TextView>
-            <TextView
-                android:id="@+id/ConsumptionRemarks"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/_10dp"
-                android:textSize="@dimen/_16dp"
-                android:text="Not Available"
-                android:layout_weight=".5">
-
-            </TextView>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_10dp"
-            android:orientation="horizontal"
-            >
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="Move To Vendor"
-                android:textStyle="bold"
-                android:layout_weight=".5"
-                android:textSize="@dimen/_16dp">
-
-            </TextView>
-            <TextView
-                android:id="@+id/MoveToVendor"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/_10dp"
-                android:textSize="@dimen/_16dp"
-                android:text="Not Available"
-                android:layout_weight=".5">
-
-            </TextView>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_10dp"
-            android:orientation="horizontal"
-            >
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="Move To Partner"
-                android:textStyle="bold"
-                android:layout_weight=".5"
-                android:textSize="@dimen/_16dp">
-
-            </TextView>
-            <TextView
-                android:id="@+id/MoveToPartner"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/_10dp"
-                android:textSize="@dimen/_16dp"
-                android:text="Not Available"
-                android:layout_weight=".5">
-
-            </TextView>
-        </LinearLayout>
-
-
-
-    </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

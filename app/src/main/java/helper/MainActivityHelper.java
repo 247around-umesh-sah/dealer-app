@@ -1,7 +1,6 @@
 package helper;
 
-import com.example.dealerapp.MainActivity;
-import com.example.dealerapp.SplashActivity;
+import com.example.RetailApp.MainActivity;
 import com.google.gson.internal.Primitives;
 
 public class MainActivityHelper {

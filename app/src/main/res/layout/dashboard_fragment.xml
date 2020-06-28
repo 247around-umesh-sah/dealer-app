@@ -29,7 +29,7 @@
                 android:ellipsize="end"
                 android:gravity="center_vertical"
                 android:maxLines="2"
-                android:text="LP-43947020021913"
+                android:text="LP-524261200421322"
                 android:hint="Enter Booking ID"
                 android:layout_marginRight="@dimen/_5dp"
                 android:background="@color/white"
@@ -57,7 +57,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <com.example.dealerapp.component.BMACardView
+        <com.example.RetailApp.component.BMACardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -107,7 +107,7 @@
                         android:textSize="@dimen/_15dp"
                         android:text="Uttarakhand"
                         android:background="@color/transparentWhite" />
-                    <com.example.dealerapp.component.BMAFontViewField
+                    <com.example.RetailApp.component.BMAFontViewField
                         android:id="@+id/stateDropDownIcon"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -144,7 +144,7 @@
                         android:textSize="@dimen/_15dp"
                         android:background="@color/transparentWhite"
                        />
-                    <com.example.dealerapp.component.BMAFontViewField
+                    <com.example.RetailApp.component.BMAFontViewField
                         android:id="@+id/cityDropDownIcon"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -359,7 +359,7 @@
                 </ImageView>
             </LinearLayout>
             </LinearLayout>
-        </com.example.dealerapp.component.BMACardView>
+        </com.example.RetailApp.component.BMACardView>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -392,8 +392,8 @@
                     android:background="@color/gray"
                     ></View>
                 <ImageView
-                    android:layout_width="@dimen/_45dp"
-                    android:layout_height="@dimen/_45dp"
+                    android:layout_width="@dimen/_40dp"
+                    android:layout_height="@dimen/_40dp"
                     android:layout_alignParentRight="true"
                     android:layout_marginRight="@dimen/_30dp"
                     android:background="@drawable/expendrighticon">

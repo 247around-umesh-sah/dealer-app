@@ -9,9 +9,11 @@
         android:orientation="vertical"
         >
         <LinearLayout
+            android:id="@+id/awbstatusLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
+            android:padding="@dimen/_5dp"
             android:background="@color/colorAccent"
             android:gravity="center"
 
@@ -24,66 +26,133 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10dp"
             android:orientation="horizontal"
             >
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="AWB Number"
+                android:text="AWB Number : "
                 android:textColor="#3EC7B8"
+                android:layout_weight=".5"
                 android:textSize="@dimen/_18dp">
 
+
+
             </TextView>
+            <TextView
+                android:id="@+id/awbnumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_10dp"
+                android:gravity="center_vertical"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/_15dp"
+                android:text="1391535348"
+                android:layout_weight=".5"
+                android:background="@color/transparentWhite" />
         </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10dp"
+        android:layout_marginLeft="@dimen/_10dp"
         android:orientation="horizontal"
        >
         <TextView
-            android:id="@+id/bookingID"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_15dp"
+            android:text="Shipped Via : "
+            android:layout_weight=".5"
+            android:background="@color/transparentWhite" />
+        <TextView
+            android:id="@+id/shippedVia"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:paddingLeft="@dimen/_10dp"
             android:gravity="center_vertical"
             android:textColor="#FFFFFF"
             android:textSize="@dimen/_15dp"
-            android:text="SM-1341421709141"
-            android:layout_weight="1"
+
+            android:text="trackon"
+            android:layout_weight=".5"
             android:background="@color/transparentWhite" />
 
+
+    </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:layout_marginTop="@dimen/_10dp"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/statusTextview"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Current Status  :"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/_15dp"
+                    android:layout_weight=".5"
+                    android:background="@color/transparentWhite"
+                    />
+                <TextView
+                    android:id="@+id/status"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="@dimen/_10dp"
+                    android:text=""
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/_15dp"
+                    android:layout_weight=".5"
+                    android:background="@color/transparentWhite"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/noDataToDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textSize="@dimen/_18dp"
+            android:text="No data to display"
+            >
+
+        </TextView>
+        <ScrollView
+            android:id="@+id/scrollBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+
+
+
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:id="@+id/trackRowMainLayout"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/_10dp"
+            android:layout_marginTop="@dimen/_10dp"
+            android:orientation="vertical"
             android:layout_height="wrap_content">
 
-
-            <TextView
-                android:id="@+id/statusTextview"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="@dimen/_15dp"
-                android:gravity="center"
-                android:text="Status  -"
-                android:textColor="#FFFFFF"
-                android:textSize="@dimen/_15dp"
-                android:background="@color/transparentWhite"
-                />
-            <TextView
-                android:id="@+id/status"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:paddingLeft="@dimen/_10dp"
-                android:gravity="center"
-                android:text=""
-                android:textColor="#FFFFFF"
-                android:textSize="@dimen/_15dp"
-                android:background="@color/transparentWhite"
-                />
         </LinearLayout>
-    </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+
+
         </LinearLayout>
-
-
-    </LinearLayout>
 
 </LinearLayout>

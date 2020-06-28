@@ -8,9 +8,7 @@ import android.os.AsyncTask;
 import android.util.Log;
 
 
-import com.example.dealerapp.MainActivity;
-import com.example.dealerapp.R;
-import com.google.gson.JsonObject;
+import com.example.RetailApp.MainActivity;
 
 import org.json.JSONObject;
 
@@ -25,8 +23,6 @@ import java.util.ArrayList;
 
 import javax.net.ssl.HttpsURLConnection;
 
-import util.BMAConstants;
-
 
 @SuppressWarnings("ALL")
 public class HttpRequest extends AsyncTask<String, Void, String> {
@@ -35,7 +31,7 @@ public class HttpRequest extends AsyncTask<String, Void, String> {
     //public static String base_url = "http://stag.aroundhomzapp.com/engineerApi";
 
     //Testing URL
-   // public static String base_url = "http://testapp.247around.com/dealerApi";
+    public static String base_url = "http://testapp.247around.com/dealerApi";
 
     ///Live Url
     //static String base_url = "https://aroundhomzapp.com/engineerApi";
@@ -46,7 +42,7 @@ public class HttpRequest extends AsyncTask<String, Void, String> {
 
 
     /// TestCRM
-    static String base_url="http://testaroundcrm.247around.com/engineerApi";
+   // static String base_url="http://testaroundcrm.247around.com/dealerApi";
     public ApiResponse delegate = null;
     public ProgressDialog progress;
     public JSONObject postDataParams;
@@ -75,13 +71,11 @@ public class HttpRequest extends AsyncTask<String, Void, String> {
      */
     protected String doInBackground(String... params) {
         // Generate Token
-        Log.d("aaaaa","getToken");
        GetToken getToken = new GetToken(context);
 
         try {
 
             String requestData = getToken.getAuthToken(params);
-            Log.d("aaaaa","After getRequest");
             url = new URL(base_url);
 
             postDataParams = new JSONObject();

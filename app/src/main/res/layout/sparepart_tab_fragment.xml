@@ -1,100 +1,422 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:paddingLeft="@dimen/_20dp"
-    android:paddingRight="@dimen/_20dp"
-    android:paddingTop="@dimen/_10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/noDataToDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="No data to display"
+        >
 
+    </TextView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/_8dp"
+        android:paddingRight="@dimen/_8dp"
+        android:paddingTop="@dimen/_10dp"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_10dp"
+        >
     <LinearLayout
         android:id="@+id/sparerequstedbysfLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/black_border_view"
-        android:padding="@dimen/_10dp"
+        android:orientation="horizontal"
         >
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Spare Part Requested By SF"
             android:textSize="@dimen/_18dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
             ></TextView>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_10dp"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            >
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_3dp"
+                android:layout_centerInParent="true"
+                android:background="@color/gray"
+                ></View>
+
+            <ImageView
+                android:id="@+id/expandIcon"
+                android:layout_width="@dimen/_25dp"
+                android:layout_height="@dimen/_35dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_30dp"
+                android:background="@drawable/downexpandicon">
+
+            </ImageView>
+        </RelativeLayout>
+
     </LinearLayout>
+
     <LinearLayout
-        android:id="@+id/estimateGivenLayout"
+        android:id="@+id/spareReqLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_15dp"
-        android:background="@drawable/black_border_view"
-        android:padding="@dimen/_10dp"
-        >
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Estimate Given"
-            android:textSize="@dimen/_18dp"
-            ></TextView>
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:padding="@dimen/_4dp"
+        ></LinearLayout>
     </LinearLayout>
     <LinearLayout
-        android:id="@+id/sparePartShippedLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_15dp"
-        android:background="@drawable/black_border_view"
-        android:padding="@dimen/_10dp"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_10dp"
         >
-        <TextView
+        <LinearLayout
+            android:id="@+id/estimateLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Spare Part Shipped"
-            android:textSize="@dimen/_18dp"
-            ></TextView>
+            android:layout_marginTop="@dimen/_12dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Estimate Given"
+                android:textSize="@dimen/_18dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                ></TextView>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:layout_gravity="end"
+                android:layout_weight="1"
+                >
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_3dp"
+                    android:layout_centerInParent="true"
+                    android:background="@color/gray"
+                    ></View>
+
+                <ImageView
+                    android:id="@+id/estimateExpandIcon"
+                    android:layout_width="@dimen/_25dp"
+                    android:layout_height="@dimen/_35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/_30dp"
+                    android:background="@drawable/downexpandicon">
+
+                </ImageView>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+
+            android:id="@+id/estimateGivenLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:padding="@dimen/_4dp"
+            android:visibility="gone"
+            >
+            <TextView
+                android:id="@+id/estimatenodata"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_150dp"
+                android:text="No Data To Display"
+                android:textSize="@dimen/_16dp"
+                android:gravity="center"
+                ></TextView>
+        </LinearLayout>
     </LinearLayout>
     <LinearLayout
-        android:id="@+id/defectiveSapreShippedbysfLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_15dp"
-        android:background="@drawable/black_border_view"
-        android:padding="@dimen/_10dp"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_10dp"
         >
-        <TextView
+        <LinearLayout
+            android:id="@+id/sparePartShippedLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Defective Spare Parts Shipped By SF"
-            android:textSize="@dimen/_18dp"
-            ></TextView>
+            android:layout_marginTop="@dimen/_12dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Spare Part Shipped"
+                android:textSize="@dimen/_18dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                ></TextView>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:layout_gravity="end"
+
+                android:layout_weight="1"
+                >
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_3dp"
+                    android:layout_centerInParent="true"
+                    android:background="@color/gray"
+                    ></View>
+
+                <ImageView
+                    android:id="@+id/spareshippedexpandIcon"
+                    android:layout_width="@dimen/_25dp"
+                    android:layout_height="@dimen/_35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/_30dp"
+                    android:background="@drawable/downexpandicon">
+
+                </ImageView>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/spareShippedLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:padding="@dimen/_4dp"
+            android:visibility="gone"
+            >
+            <TextView
+                android:id="@+id/shippednodata"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_150dp"
+                android:text="No Data To Display"
+                android:textSize="@dimen/_16dp"
+                android:gravity="center"
+                ></TextView>
+        </LinearLayout>
     </LinearLayout>
     <LinearLayout
-        android:id="@+id/InvoiceIDLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_15dp"
-        android:paddingTop="@dimen/_15dp"
-        android:background="@drawable/black_border_view"
-        android:padding="@dimen/_10dp"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_10dp"
         >
-        <TextView
+        <LinearLayout
+            android:id="@+id/defectiveSapreShippedbysfLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Invoice ID Details"
-            android:textSize="@dimen/_18dp"
-            ></TextView>
+            android:layout_marginTop="@dimen/_12dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Defective Spare Shipped"
+                android:textSize="@dimen/_18dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                ></TextView>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:layout_gravity="end"
+                android:layout_weight="1"
+                >
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_3dp"
+                    android:layout_centerInParent="true"
+                    android:background="@color/gray"
+                    ></View>
+
+                <ImageView
+                    android:id="@+id/defectiveSparedexpandIcon"
+                    android:layout_width="@dimen/_25dp"
+                    android:layout_height="@dimen/_35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/_30dp"
+                    android:background="@drawable/downexpandicon">
+
+                </ImageView>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/defectiveSpareLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:visibility="gone"
+            android:padding="@dimen/_4dp"
+            >
+            <TextView
+                android:id="@+id/defectivenodata"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_150dp"
+                android:text="No Data To Display"
+                android:textSize="@dimen/_16dp"
+                android:gravity="center"
+                ></TextView>
+        </LinearLayout>
     </LinearLayout>
     <LinearLayout
-        android:id="@+id/OUWInvoiceDetailLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/black_border_view"
-        android:layout_marginTop="@dimen/_15dp"
-        android:padding="@dimen/_10dp"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_10dp"
         >
-        <TextView
+        <LinearLayout
+            android:id="@+id/InvoiceIDLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="Out Of Warranty Invoice Detail ( Uploaded By Partner )"
-            android:textSize="@dimen/_18dp"
-            ></TextView>
+            android:orientation="horizontal"
+            android:visibility="gone"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Invoice Details"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/_18dp"
+                ></TextView>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:layout_gravity="end"
+                android:layout_weight="1"
+                >
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_3dp"
+                    android:layout_centerInParent="true"
+                    android:background="@color/gray"
+                    ></View>
+
+                <ImageView
+                    android:id="@+id/invoiceExpandIcon"
+                    android:layout_width="@dimen/_28dp"
+                    android:layout_height="@dimen/_30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/_30dp"
+                    android:background="@drawable/downexpandicon">
+
+                </ImageView>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/invoiceLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:padding="@dimen/_4dp"
+            android:visibility="gone"
+            ></LinearLayout>
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_10dp"
+        >
+        <LinearLayout
+            android:id="@+id/OUWInvoiceDetailLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OOW Invoice"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/_18dp"
+                android:textStyle="bold"
+                ></TextView>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:layout_gravity="end"
+                android:layout_weight="1"
+                >
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_3dp"
+                    android:layout_centerInParent="true"
+                    android:background="@color/gray"
+                    ></View>
+
+                <ImageView
+                    android:id="@+id/oowInvoiceexpandIcon"
+                    android:layout_width="@dimen/_30dp"
+                    android:layout_height="@dimen/_30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/_30dp"
+                    android:background="@drawable/downexpandicon">
+
+                </ImageView>
+            </RelativeLayout>
+
+        </LinearLayout>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_3dp"
+            android:layout_marginRight="@dimen/_3dp"
+            android:layout_marginTop="@dimen/_5dp"
+            android:layout_marginBottom="@dimen/_8dp"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="@dimen/_10dp"
+            >
+        <LinearLayout
+            android:id="@+id/oowInvoiceLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:visibility="gone"
+            android:padding="@dimen/_4dp"
+
+            ></LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+
 </LinearLayout>
